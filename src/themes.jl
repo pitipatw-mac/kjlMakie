@@ -144,7 +144,7 @@ kjl_dark = Theme(
     Legend = (bgcolor = :black,
         framecolor = :white),
 
-    cycle = [green, blue, orange, red, gray1, gray2, :black],
+    cycle = [green, blue, orange, red, gray1, gray2, :white],
 
     Heatmap = (colormap = white2blue,),
 
