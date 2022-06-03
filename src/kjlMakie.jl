@@ -1,5 +1,10 @@
 module kjlMakie
 
-greet() = print("Hello World!")
+using Makie
+using Colors
+
+include("themes.jl")
+export kjl_light
+export kjl_dark
 
 end # module
