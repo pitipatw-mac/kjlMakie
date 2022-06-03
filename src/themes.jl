@@ -118,6 +118,18 @@ kjl_dark = Theme(
         zspinecolor = :white,
         zticklabelsvisible = false,
         zticksvisible = false,
+        xspinecolor_1 = :white,
+        xspinecolor_2 = :white,
+        xspinecolor_3 = :white,
+        xtickcolor = :white,
+        yspinecolor_1 = :white,
+        yspinecolor_2 = :white,
+        yspinecolor_3 = :white,
+        ytickcolor = :white,
+        zspinecolor_1 = :white,
+        zspinecolor_2 = :white,
+        zspinecolor_3 = :white,
+        ztickcolor = :white
         ),
 
     Lines = (linewidth = 4,
