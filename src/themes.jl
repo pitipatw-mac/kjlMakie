@@ -67,9 +67,11 @@ kjl_light = Theme(
 
     cycle = [green, blue, orange, red, gray1, gray2, :black],
 
-    Heatmap = (colormap = white2blue,),
+    Heatmap = (colormap = trans2blue,),
 
-    Surface = (colormap = white2blue,)
+    Surface = (colormap = trans2blue,),
+
+    Spy = (colormap = trans2blue,)
 )
 
 kjl_dark = Theme(
@@ -146,7 +148,9 @@ kjl_dark = Theme(
 
     cycle = [green, blue, orange, red, gray1, gray2, :white],
 
-    Heatmap = (colormap = white2blue,),
+    Heatmap = (colormap = trans2blue,),
 
-    Surface = (colormap = white2blue,)
+    Surface = (colormap = trans2blue,),
+
+    Spy = (colormap = trans2blue,)
 )
