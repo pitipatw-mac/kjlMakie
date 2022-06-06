@@ -9,5 +9,9 @@ export kjl_dark
 export red2blue
 export white2blue
 export trans2blue
+export tickFontSize
+export labelFontSize
+export titleFontSize
 
 end # module
+ 

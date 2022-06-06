@@ -12,9 +12,9 @@ white2red = cgrad([:white, red])
 trans2blue = cgrad([:transparent, blue])
 
 # text sizes
-size1 = 18
-size2 = 20
-size3 = 25
+tickFontSize = 18
+labelFontSize = 20
+titleFontSize = 25
 
 # font
 typeface = "Arial" #IBM Plex Sans, Libre Caslon Text, Times New Roman
@@ -24,15 +24,15 @@ kjl_light = Theme(
 
     Axis = (backgroundcolor = :transparent,
         xlabelfont = typeface,
-        xlabelsize = size2,
+        xlabelsize = labelFontSize,
         ylabelfont = typeface,
-        ylabelsize = size2,
+        ylabelsize = labelFontSize,
         xticklabelfont= typeface,
-        xticklabelsize = size1,
+        xticklabelsize = labelFontSize,
         yticklabelfont = typeface,
-        yticklabelsize = size2,
+        yticklabelsize = labelFontSize,
         titlefont = typeface,
-        titlesize = size3,
+        titlesize = titleFontSize,
         xgridvisible = false,
         ygridvisible = false),
 
@@ -79,15 +79,15 @@ kjl_dark = Theme(
     backgroundcolor = :transparent,
     Axis = (backgroundcolor = :transparent,
         xlabelfont = typeface,
-        xlabelsize = size2,
+        xlabelsize = labelFontSize,
         ylabelfont = typeface,
-        ylabelsize = size2,
+        ylabelsize = labelFontSize,
         xticklabelfont= typeface,
-        xticklabelsize = size1,
+        xticklabelsize = labelFontSize,
         yticklabelfont = typeface,
-        yticklabelsize = size1,
+        yticklabelsize = labelFontSize,
         titlefont = typeface,
-        titlesize = size3,
+        titlesize = titleFontSize,
         bottomspinecolor = :white,
         topspinecolor = :white,
         leftspinecolor = :white,
