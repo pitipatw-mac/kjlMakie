@@ -13,5 +13,8 @@ export tickFontSize
 export labelFontSize
 export titleFontSize
 
+include("functions.jl")
+export discretize
+
 end # module
  
