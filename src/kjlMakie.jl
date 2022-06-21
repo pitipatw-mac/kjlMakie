@@ -12,6 +12,12 @@ export trans2blue
 export tickFontSize
 export labelFontSize
 export titleFontSize
+export green
+export blue
+export red
+export orange
+export gray1
+export gray2
 
 include("functions.jl")
 export discretize
