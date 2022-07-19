@@ -71,7 +71,10 @@ kjl_light = Theme(
 
     Surface = (colormap = trans2blue,),
 
-    Spy = (colormap = trans2blue,)
+    Spy = (colormap = trans2blue,),
+
+    Scatter = (strokewidth = 1,
+        strokecolor = :white)
 )
 
 kjl_dark = Theme(
@@ -152,5 +155,8 @@ kjl_dark = Theme(
 
     Surface = (colormap = trans2blue,),
 
-    Spy = (colormap = trans2blue,)
+    Spy = (colormap = trans2blue,),
+
+    Scatter = (strokewidth = 1,
+        strokecolor = :white)
 )
