@@ -1,3 +1,5 @@
+![Dark mode 2d](examples/2d_dark.png)
+
 # kjlMakie
 
 Makie theme for light/dark mode. Mostly tested/intended for 2D vector plotting (`CairoMakie`) in half-width journal formatting (ie text sizes are sized to be legible in half-width format). Will most likely not work with the `WGLMakie` backend.
@@ -18,4 +20,5 @@ and either:
 
 or 
 
-`with_theme(kjl_light) do:`.
+`with_theme(kjl_light) do:`
+
