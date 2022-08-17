@@ -53,7 +53,14 @@ kjl_light = Theme(
         zlabelvisible = false,
         zspinesvisible = false,
         zticklabelsvisible = false,
-        zticksvisible = false
+        zticksvisible = false,
+        titlefont = typeface,
+        xlabelfont = typeface,
+        ylabelfont = typeface,
+        zlabelfont = typeface,
+        xticklabelfont = typeface,
+        yticklabelfont = typeface,
+        zticklabelfont = typeface,
         ),
 
     Lines = (linewidth = 4,
@@ -63,7 +70,9 @@ kjl_light = Theme(
         ticklabelfont = typeface),
 
     Legend = (bgcolor = :white,
-        framecolor = :black),
+        framecolor = :black,
+        labelfont = typeface,
+        titlefont = typeface),
 
     cycle = [green, blue, orange, red, gray1, gray2, :black],
 
@@ -137,7 +146,14 @@ kjl_dark = Theme(
         zspinecolor_3 = :white,
         zlabelcolor = :white,
         zticklabelcolor = :white,
-        ztickcolor = :white
+        ztickcolor = :white,
+        titlefont = typeface,
+        xlabelfont = typeface,
+        ylabelfont = typeface,
+        zlabelfont = typeface,
+        xticklabelfont = typeface,
+        yticklabelfont = typeface,
+        zticklabelfont = typeface,
         ),
 
     Lines = (linewidth = 4,
@@ -147,7 +163,9 @@ kjl_dark = Theme(
         ticklabelfont = typeface),
 
     Legend = (bgcolor = :black,
-        framecolor = :white),
+        framecolor = :white,
+        labelfont = typeface,
+        titlefont = typeface),
 
     cycle = [green, blue, orange, red, gray1, gray2, :white],
 
