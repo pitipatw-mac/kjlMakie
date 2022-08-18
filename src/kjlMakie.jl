@@ -21,6 +21,6 @@ export gray2
 
 include("functions.jl")
 export discretize
-
+export labelize!
 end # module
  
