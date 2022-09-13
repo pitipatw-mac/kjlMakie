@@ -14,6 +14,7 @@ export labelFontSize
 export titleFontSize
 export green
 export blue
+export pink
 export red
 export orange
 export gray1

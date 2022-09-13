@@ -4,7 +4,7 @@ red = colorant"#EA2127"
 orange = colorant"#F9A11D"
 gray1 = colorant"#B2B2B2"
 gray2 = colorant"#808080"
-pink = colorant"FF7BAC"
+pink = colorant"#FF7BAC"
 
 red2blue = cgrad([red, gray1, blue])
 green2blue = cgrad([green, gray1, blue])
