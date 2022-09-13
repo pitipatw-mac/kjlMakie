@@ -18,7 +18,7 @@ labelFontSize = 20
 titleFontSize = 25
 
 # font
-typeface = "Arial" #IBM Plex Sans, Libre Caslon Text, Times New Roman
+typeface = "Arial" #IBM Plex Sans, Libre Caslon Text, Times New Roman, Neue Haas Unica Pro
 
 kjl_light = Theme(
     backgroundcolor = :transparent,
