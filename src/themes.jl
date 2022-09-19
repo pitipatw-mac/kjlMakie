@@ -23,7 +23,7 @@ typeface = "Arial" #IBM Plex Sans, Libre Caslon Text, Times New Roman, Neue Haas
 kjl_light = Theme(
     backgroundcolor = :transparent,
 
-    palette = (color = [blue, green, orange, red, gray1, gray2, :black],
+    palette = (color = [blue, green, pink, orange, gray1, gray2, :black],
         marker = [:rect, :circle, :utriangle, :xcross]),
 
     Axis = (backgroundcolor = :transparent,
@@ -102,7 +102,7 @@ kjl_dark = Theme(
 
     backgroundcolor = :transparent,
 
-    palette = (color = [blue, green, orange, red, gray1, gray2, :white],
+    palette = (color = [blue, green, pink, orange, gray1, gray2, :white],
         marker = [:rect, :circle, :utriangle, :xcross]),
 
     Axis = (backgroundcolor = :transparent,
