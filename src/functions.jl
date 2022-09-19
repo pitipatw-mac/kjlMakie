@@ -8,7 +8,6 @@ end
 """
 turn on/off labels for Axis3
 """
-
 function labelize!(axis::Axis3)
     axis.titlevisible = !axis.titlevisible[]
     axis.xgridvisible = !axis.xgridvisible[]
@@ -33,7 +32,6 @@ end
 """
 Scale fontsizes
 """
-
 function labelscale!(axis::Axis, factor::Float64)
     axis.xlabelsize = axis.xlabelsize[] * factor
     axis.ylabelsize = axis.ylabelsize[] * factor

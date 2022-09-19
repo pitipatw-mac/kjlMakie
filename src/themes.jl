@@ -198,6 +198,6 @@ kjl_dark = Theme(
     Spy = (colormap = trans2blue,),
 
     Scatter = (strokewidth = 1,
-        cycle = [:color, marker],
+        cycle = [:color, :marker],
         strokecolor = :white),
 )
