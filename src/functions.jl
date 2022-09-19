@@ -70,12 +70,12 @@ function changefont!(axis::Axis3, font::String)
     axis.zticklabelfont = font
 end
 
-function changefont!(cbar::Colorbar, font::String)
-    cbar.labelfont = font
-    cbar.ticklabelfont = font
-end
+# function changefont!(cbar::Colorbar, font::String)
+#     cbar.labelfont = font
+#     cbar.ticklabelfont = font
+# end
 
-function changefont!(legend::Legend, font::String)
-    legend.labelfont = font
-    legend.titlefont = font
-end
+# function changefont!(legend::Legend, font::String)
+#     legend.labelfont = font
+#     legend.titlefont = font
+# end

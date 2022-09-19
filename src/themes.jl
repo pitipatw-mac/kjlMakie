@@ -94,7 +94,7 @@ kjl_light = Theme(
 
     Scatter = (strokewidth = 1,
         cycle = [:color, :marker],
-        strokecolor = :white)
+        strokecolor = :white),
 )
 
 kjl_dark = Theme(
@@ -102,7 +102,7 @@ kjl_dark = Theme(
 
     backgroundcolor = :transparent,
 
-    palette = (color = [blue, green, orange, red, gray1, gray2, :black],
+    palette = (color = [blue, green, orange, red, gray1, gray2, :white],
         marker = [:rect, :circle, :utriangle, :xcross]),
 
     Axis = (backgroundcolor = :transparent,
@@ -199,5 +199,5 @@ kjl_dark = Theme(
 
     Scatter = (strokewidth = 1,
         cycle = [:color, marker],
-        strokecolor = :white)
+        strokecolor = :white),
 )
