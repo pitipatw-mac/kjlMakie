@@ -23,7 +23,8 @@ typeface = "Arial" #IBM Plex Sans, Libre Caslon Text, Times New Roman, Neue Haas
 kjl_light = Theme(
     backgroundcolor = :transparent,
 
-    palette = (color =[blue, green, orange, red, gray1, gray2, :black]),
+    palette = (color = [blue, green, orange, red, gray1, gray2, :black],
+        marker = [:rect, :circle, :utriangle, :xcross]),
 
     Axis = (backgroundcolor = :transparent,
         xlabelfont = typeface,
@@ -74,7 +75,7 @@ kjl_light = Theme(
         ),
 
     Lines = (linewidth = 4,
-        cycle = [:color],
+        cycle = [:color, :marker],
         linestyle = :solid),
 
     Colorbar = (labelfont = typeface,
@@ -92,7 +93,7 @@ kjl_light = Theme(
     Spy = (colormap = trans2blue,),
 
     Scatter = (strokewidth = 1,
-        cycle = [:color],
+        cycle = [:color, :marker],
         strokecolor = :white)
 )
 
@@ -101,7 +102,8 @@ kjl_dark = Theme(
 
     backgroundcolor = :transparent,
 
-    palette = (color =[blue, green, orange, red, gray1, gray2, :white]),
+    palette = (color = [blue, green, orange, red, gray1, gray2, :black],
+        marker = [:rect, :circle, :utriangle, :xcross]),
 
     Axis = (backgroundcolor = :transparent,
         xlabelfont = typeface,
@@ -178,7 +180,7 @@ kjl_dark = Theme(
         ),
 
     Lines = (linewidth = 4,
-        cycle = [:color],
+        cycle = [:color, :marker],
         linestyle = :solid),
 
     Colorbar = (labelfont = typeface,
@@ -196,6 +198,6 @@ kjl_dark = Theme(
     Spy = (colormap = trans2blue,),
 
     Scatter = (strokewidth = 1,
-        cycle = [:color],
+        cycle = [:color, marker],
         strokecolor = :white)
 )
