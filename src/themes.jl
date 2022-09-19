@@ -74,7 +74,7 @@ kjl_light = Theme(
         zticklabelsize = tickFontSize
         ),
 
-    Lines = (linewidth = 4,
+    Line = (linewidth = 4,
         cycle = [:color, :marker],
         linestyle = :solid),
 
@@ -179,7 +179,7 @@ kjl_dark = Theme(
         zticklabelsize = tickFontSize
         ),
 
-    Lines = (linewidth = 4,
+    Line = (linewidth = 4,
         cycle = [:color, :marker],
         linestyle = :solid),
 
