@@ -94,7 +94,7 @@ kjl_dark = Theme(
 
     backgroundcolor = :transparent,
 
-    palette = (color =[blue, green, orange, red, gray1, gray2, :black]),
+    palette = (color =[blue, green, orange, red, gray1, gray2, :white]),
 
     Axis = (backgroundcolor = :transparent,
         xlabelfont = typeface,
