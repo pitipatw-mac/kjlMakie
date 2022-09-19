@@ -64,6 +64,13 @@ kjl_light = Theme(
         xticklabelfont = typeface,
         yticklabelfont = typeface,
         zticklabelfont = typeface,
+        titlesize = titleFontSize,
+        xlabelsize = labelFontSize,
+        ylabelsize = labelFontSize,
+        zlabelsize = labelFontSize,
+        xticklabelsize = tickFontSize,
+        yticklabelsize = tickFontSize,
+        zticklabelsize = tickFontSize
         ),
 
     Lines = (linewidth = 4,
@@ -161,6 +168,13 @@ kjl_dark = Theme(
         xticklabelfont = typeface,
         yticklabelfont = typeface,
         zticklabelfont = typeface,
+        titlesize = titleFontSize,
+        xlabelsize = labelFontSize,
+        ylabelsize = labelFontSize,
+        zlabelsize = labelFontSize,
+        xticklabelsize = tickFontSize,
+        yticklabelsize = tickFontSize,
+        zticklabelsize = tickFontSize
         ),
 
     Lines = (linewidth = 4,
