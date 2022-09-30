@@ -37,6 +37,8 @@ kjl_light = Theme(
         yticklabelsize = labelFontSize,
         titlefont = typeface,
         titlesize = titleFontSize,
+        xgridcolor = gray2,
+        ygridcolor = gray2,
         xgridvisible = false,
         ygridvisible = false),
 
@@ -58,6 +60,9 @@ kjl_light = Theme(
         zspinesvisible = false,
         zticklabelsvisible = false,
         zticksvisible = false,
+        xgridcolor = gray2,
+        ygridcolor = gray2,
+        zgridcolor = gray2,
         titlefont = typeface,
         xlabelfont = typeface,
         ylabelfont = typeface,
@@ -123,9 +128,9 @@ kjl_dark = Theme(
         xtickcolor = :white,
         ytickcolor = :white,
         xgridvisible = false,
-        xgridcolor = :white,
+        xgridcolor = gray1,
         ygridvisible = false,
-        ygridcolor = :white),
+        ygridcolor = gray1),
 
     Axis3 = (backgroundcolor = :transparent,
         aspect = :data,
@@ -176,7 +181,10 @@ kjl_dark = Theme(
         zlabelsize = labelFontSize,
         xticklabelsize = tickFontSize,
         yticklabelsize = tickFontSize,
-        zticklabelsize = tickFontSize
+        zticklabelsize = tickFontSize,
+        xgridcolor = gray1,
+        ygridcolor = gray1,
+        zgridcolor = gray1,
         ),
 
     Line = (linewidth = 4,
