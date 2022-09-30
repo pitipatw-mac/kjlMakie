@@ -40,6 +40,14 @@ function labelscale!(axis::Axis, factor::Float64)
     axis.titlesize = axis.titlesize[] * factor
 end
 
+function resetlabelscale!(axis::Axis)
+    axis.xlabelsize = labelFontSize
+    axis.ylabelsize = labelFontSize
+    axis.xticklabelsize = tickFontSize
+    axis.yticklabelsize = tickFontSize
+    axis.titlesize = titleFontSize
+end
+
 function labelscale!(axis::Axis3, factor::Float64)
     axis.titlesize = axis.titlesize[] * factor
     axis.xlabelsize = axis.xlabelsize[] * factor
@@ -48,6 +56,16 @@ function labelscale!(axis::Axis3, factor::Float64)
     axis.xticklabelsize = axis.xticklabelsize[] * factor
     axis.yticklabelsize = axis.yticklabelsize[] * factor
     axis.zticklabelsize = axis.zticklabelsize[] * factor
+end
+
+function resetlabelscale!(axis::Axis3)
+    axis.titlesize = titleFontSize
+    axis.xlabelsize = labelFontSize
+    axis.ylabelsize = labelFontSize
+    axis.zlabelsize = labelFontSize
+    axis.xticklabelsize = tickFontSize
+    axis.yticklabelsize = tickFontSize
+    axis.zticklabelsize = tickFontSize
 end
 
 function changefont!(axis::Axis, font::String)

@@ -25,7 +25,7 @@ export discretize
 export labelize!
 export labelscale!
 export changefont!
-
+export resetlabelscale!
 end # module
  
 #test123
