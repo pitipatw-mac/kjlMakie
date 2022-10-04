@@ -24,7 +24,7 @@ kjl_light = Theme(
     backgroundcolor = :transparent,
 
     palette = (color = [blue, green, pink, orange, gray1, gray2, :black],
-        marker = [:rect, :circle, :utriangle, :xcross]),
+        marker = [:circle, :rect, :utriangle, :xcross]),
 
     Axis = (backgroundcolor = :transparent,
         xlabelfont = typeface,
@@ -108,7 +108,7 @@ kjl_dark = Theme(
     backgroundcolor = :transparent,
 
     palette = (color = [blue, green, pink, orange, gray1, gray2, :white],
-        marker = [:rect, :circle, :utriangle, :xcross]),
+        marker = [:circle, :rect, :utriangle, :xcross]),
 
     Axis = (backgroundcolor = :transparent,
         xlabelfont = typeface,
