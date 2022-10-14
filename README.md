@@ -22,3 +22,23 @@ or
 
 `with_theme(kjl_light) do:`
 
+# Useful functions
+`discretize` chops up a colormap into n discrete units to reference later. The default colormap is `:tempo`.
+
+```
+colorscale = discretize(10)
+
+colorscale2 = discretize(10, colormap = :inferno)
+```
+
+`labelize!(axis::Union{Axis, Axis3})` turns on/off the labels/decorations of an axis.
+
+`labelscale!(axis::Union{Axis, Axis3})` scales all text/numbers by a factor (1.1 = 100% = no change).
+
+`resetlabelscale!(axis::Union{Axis,Axis3})` resets text/number sizes to default.
+
+`changefont!(axis::Union{Axis,Axis3}, font::String)` changes the font family (default = Arial).
+
+```
+changefont!(myaxis, "Times New Roman")
+```
