@@ -2,11 +2,13 @@
 
 # kjlMakie
 
-Makie theme for light/dark mode. Mostly tested/intended for 2D vector plotting (`CairoMakie`) in half-width journal formatting (ie text sizes are sized to be legible in half-width format). Will most likely not work with the `WGLMakie` backend.
+Makie theme for light/dark mode, as well as some commonly used utility functions. Mostly tested/intended for 2D vector plotting (`CairoMakie`) in half-width journal formatting (ie text sizes are sized to be legible in half-width format). Will most likely not work with the `WGLMakie` backend.
 
-3D plots are set up without spines or axes, these should be manually reintroduced via `axis.xspinevisible = true`, etc. when displaying 3D numerical data.
+The two available themes are `kjl_light` and `kjl_dark`.
 
-Background colours are all set to transparent to allow for placement in non-white/non-black scenarios.
+3D plots are set up without spines, axes, or labels. When required, use `labelize!(axis)` to toggle them on/off.
+
+Background colours are all set to transparent to allow for placement in non-white/non-black scenarios. `GLMakie` requires a non-transparent background colour for the figure to render properly. Make sure to use `Figure(backgroundcolor = :color)` if working in `GLMakie`.
 
 # to install
 
