@@ -33,7 +33,7 @@ colorscale2 = discretize(10, colormap = :inferno)
 
 `labelize!(axis::Union{Axis, Axis3})` turns on/off the labels/decorations of an axis.
 
-`labelscale!(axis::Union{Axis, Axis3})` scales all text/numbers by a factor (1.1 = 100% = no change).
+`labelscale!(axis::Union{Axis, Axis3})` scales all text/numbers by a factor (1.0 = 100% = no change).
 
 `resetlabelscale!(axis::Union{Axis,Axis3})` resets text/number sizes to default.
 
