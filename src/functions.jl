@@ -101,12 +101,13 @@ function changefont!(axis::Axis3, font::String)
     axis.zticklabelfont = font
 end
 
-# function changefont!(cbar::Colorbar, font::String)
-#     cbar.labelfont = font
-#     cbar.ticklabelfont = font
-# end
+function gridtoggle!(axis::Axis)
+    axis.xgridvisible = !axis.xgridvisible[]
+    axis.ygridvisible = !axis.ygridvisible[]
+end
 
-# function changefont!(legend::Legend, font::String)
-#     legend.labelfont = font
-#     legend.titlefont = font
-# end
+function gridtoggle!(axis::Axis3)
+    axis.xgridvisible = !axis.xgridvisible[]
+    axis.ygridvisible = !axis.ygridvisible[]
+    axis.zgridvisible = !axis.zgridvisible[]
+end

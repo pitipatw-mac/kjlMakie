@@ -26,6 +26,7 @@ export labelize!
 export labelscale!
 export changefont!
 export resetlabelscale!
+export gridtoggle!
 end # module
  
 #test123

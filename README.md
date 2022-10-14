@@ -42,3 +42,5 @@ colorscale2 = discretize(10, colormap = :inferno)
 ```
 changefont!(myaxis, "Times New Roman")
 ```
+
+`gridtoggle!(axis::Union{Axis, Axis3})` turns gridlines on/off.
