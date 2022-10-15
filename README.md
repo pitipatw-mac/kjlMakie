@@ -46,7 +46,7 @@ These functions work on `Axis, Axis3`.
 
 `labelize!(axis)` turns on/off the labels/decorations of an axis.
 
-`labelscale!(axis)` scales all text/numbers by a factor (1.0 = 100% = no change). Note that the scale factor is relative to the current font sizes of the axis; using `labelscale` twice may not achieve what you want. To revert, use `resetlabelscale` below.
+`labelscale!(axis, factor::Float64)` scales all text/numbers by a factor (1.0 = 100% = no change). Note that the scale factor is relative to the current font sizes of the axis; using `labelscale` twice may not achieve what you want. To revert, use `resetlabelscale` below.
 
 `resetlabelscale!(axis)` resets text/number sizes to default.
 
