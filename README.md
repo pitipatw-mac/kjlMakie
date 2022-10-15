@@ -30,24 +30,30 @@ or
 `with_theme(kjl_light) do:`
 
 # Useful functions
-`discretize` chops up a colormap into n discrete units to reference later. The default colormap is `:tempo`.
+## Colour-based functions
+`discretize` chops up a colormap into n discrete units to reference later. This is useful when plotting categorical data using a given color gradient. The output is a vector of colours that can be indexed. The default colormap is `:tempo`.
 
 ```
 colorscale = discretize(10)
 
 colorscale2 = discretize(10, colormap = :inferno)
+
+lines(x, color = colorscale[2])
 ```
 
-`labelize!(axis::Union{Axis, Axis3})` turns on/off the labels/decorations of an axis.
+## Axis modification functions
+These functions work on `Axis, Axis3`.
 
-`labelscale!(axis::Union{Axis, Axis3})` scales all text/numbers by a factor (1.0 = 100% = no change).
+`labelize!(axis)` turns on/off the labels/decorations of an axis.
 
-`resetlabelscale!(axis::Union{Axis,Axis3})` resets text/number sizes to default.
+`labelscale!(axis)` scales all text/numbers by a factor (1.0 = 100% = no change). Note that the scale factor is relative to the current font sizes of the axis; using `labelscale` twice may not achieve what you want. To revert, use `resetlabelscale` below.
 
-`changefont!(axis::Union{Axis,Axis3}, font::String)` changes the font family (default = Arial).
+`resetlabelscale!(axis)` resets text/number sizes to default.
+
+`changefont!(axis)` changes the font family (default = Arial).
 
 ```
 changefont!(myaxis, "Times New Roman")
 ```
 
-`gridtoggle!(axis::Union{Axis, Axis3})` turns gridlines on/off.
+`gridtoggle!(axis)` turns gridlines on/off.
