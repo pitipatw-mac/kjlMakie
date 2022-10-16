@@ -33,13 +33,13 @@ function labelize!(axis::Axis)
     axis.titlevisible = !axis.titlevisible[]
     axis.xgridvisible = !axis.xgridvisible[]
     axis.xlabelvisible = !axis.xlabelvisible[]
-    axis.xspinesvisible = !axis.xspinesvisible[]
+    # axis.xspinesvisible = !axis.xspinesvisible[]
     axis.xticklabelsvisible = !axis.xticklabelsvisible[]
     axis.xticksvisible = !axis.xticksvisible[]
 
     axis.ygridvisible = !axis.ygridvisible[]
     axis.ylabelvisible = !axis.ylabelvisible[]
-    axis.yspinesvisible = !axis.yspinesvisible[]
+    # axis.yspinesvisible = !axis.yspinesvisible[]
     axis.yticklabelsvisible = !axis.yticklabelsvisible[]
     axis.yticksvisible = !axis.yticksvisible[]
 end
