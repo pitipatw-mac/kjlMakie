@@ -7,8 +7,9 @@ gray1 = colorant"#B2B2B2"
 gray2 = colorant"#808080"
 pink = colorant"#FF7BAC"
 
-red2blue = cgrad([red, gray1, blue])
-green2blue = cgrad([green, gray1, blue])
+red2blue = cgrad([red, :white, blue])
+green2blue = cgrad([green, :white, blue])
+pink2blue = cgrad([pink, :white, blue])
 white2blue = cgrad([:white, blue])
 white2red = cgrad([:white, red])
 trans2blue = cgrad([:transparent, blue])

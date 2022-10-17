@@ -7,6 +7,7 @@ include("themes.jl")
 export kjl_light
 export kjl_dark
 export red2blue
+export pink2blue
 export white2blue
 export trans2blue
 export green
