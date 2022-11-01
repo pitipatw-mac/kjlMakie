@@ -113,6 +113,9 @@ kjl_light = Theme(
     Scatter = (strokewidth = 1,
         cycle = [:color, :marker],
         strokecolor = :white),
+
+    Hist = (color = blue,
+        strokecolor = :black),
 )
 
 kjl_dark = Theme(
@@ -220,5 +223,8 @@ kjl_dark = Theme(
 
     Scatter = (strokewidth = 1,
         cycle = [:color, :marker],
+        strokecolor = :white),
+
+    Hist = (color = blue,
         strokecolor = :white),
 )
