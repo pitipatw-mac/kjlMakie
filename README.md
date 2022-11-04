@@ -162,3 +162,14 @@ hidedecorations!(ax2)
 hidespines!(ax2)
 ```
 ![](examples/walkthrough/fig8.png)
+
+And a fun lil animation to show how nice `Makie` + `kjlMakie` is :)
+```
+iterator = collect(0:360)
+inc = 2pi / 360
+
+record(fig, "figures/anim.gif", iterator; framerate = 20) do _
+    ax2.azimuth[] += inc
+end
+```
+![](examples/walkthrough/anim.gif)
