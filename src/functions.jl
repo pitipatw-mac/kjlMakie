@@ -47,12 +47,22 @@ end
 """
 Scale fontsizes
 """
-function labelscale!(axis::Axis, factor::Float64)
-    axis.xlabelsize = axis.xlabelsize[] * factor
-    axis.ylabelsize = axis.ylabelsize[] * factor
-    axis.xticklabelsize = axis.xticklabelsize[] * factor
-    axis.yticklabelsize = axis.yticklabelsize[] * factor
-    axis.titlesize = axis.titlesize[] * factor
+function labelscale!(axis::Axis, factor::Union{Float64, Int64})
+    axis.xlabelsize = labelFontSize * factor
+    axis.ylabelsize = labelFontSize * factor
+    axis.xticklabelsize = tickFontSize * factor
+    axis.yticklabelsize = tickFontSize * factor
+    axis.titlesize = titleFontSize * factor
+end
+
+function labelscale!(axis::Axis3, factor::Union{Float64, Int64})
+    axis.titlesize = titleFontSize * factor
+    axis.xlabelsize = labelFontSize * factor
+    axis.ylabelsize = labelFontSize * factor
+    axis.zlabelsize = labelFontSize * factor
+    axis.xticklabelsize = tickFontSize * factor
+    axis.yticklabelsize = tickFontSize * factor
+    axis.zticklabelsize = tickFontSize * factor
 end
 
 function resetlabelscale!(axis::Axis)
@@ -61,16 +71,6 @@ function resetlabelscale!(axis::Axis)
     axis.xticklabelsize = tickFontSize
     axis.yticklabelsize = tickFontSize
     axis.titlesize = titleFontSize
-end
-
-function labelscale!(axis::Axis3, factor::Float64)
-    axis.titlesize = axis.titlesize[] * factor
-    axis.xlabelsize = axis.xlabelsize[] * factor
-    axis.ylabelsize = axis.ylabelsize[] * factor
-    axis.zlabelsize = axis.zlabelsize[] * factor
-    axis.xticklabelsize = axis.xticklabelsize[] * factor
-    axis.yticklabelsize = axis.yticklabelsize[] * factor
-    axis.zticklabelsize = axis.zticklabelsize[] * factor
 end
 
 function resetlabelscale!(axis::Axis3)

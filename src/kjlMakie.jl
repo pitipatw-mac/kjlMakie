@@ -4,12 +4,13 @@ using Makie
 using Colors
 
 include("themes.jl")
+include("colors.jl")
 export kjl_light
 export kjl_dark
 export red2blue
 export pink2blue
 export white2blue
-export trans2blue
+export pink2blue
 export green
 export blue
 export pink
