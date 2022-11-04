@@ -57,3 +57,108 @@ changefont!(myaxis, "Times New Roman")
 ```
 
 `gridtoggle!(axis)` turns gridlines on/off.
+
+# Walkthrough
+Starting with a figure definition:
+```
+using CairoMakie, kjlMakie
+set_theme!(kjl_dark)
+
+fig = Figure(backgroundcolor = :black)
+```
+![](examples/walkthrough/fig0.png)
+
+Define a 2D axis:
+```
+ax = Axis(fig[1,1],
+        aspect = 1,
+        xlabel = "t",
+        ylabel = "sin(t)",
+        title = "2D Plot")
+```
+
+![](examples/walkthrough/fig1.png)
+
+Plot a sine wave:
+```
+t = collect(0:0.01:2pi)
+s = sin.(t)
+
+sinwave = lines!(t, s,
+    linewidth = 4)
+```
+
+![](examples/walkthrough/fig2.png)
+
+Add a new 3D axis. Note that `ax2.protusions` need to be manually set when an `Axis3` is placed next to an `Axis` to ensure zlabel text does not overlap. By default, `Axis3` blocks using kjlMakie has no spines/labels (for plotting 3d objects). `labelize!` turns these labels on, and `gridtoggle!` turns off the grid.
+```
+ax2 = Axis3(fig[1,2],
+        xlabel = "ϕ",
+        ylabel = "t",
+        zlabel = "sin(t + ϕ)",
+        aspect = (1,1,1))
+
+    ax2.protrusions = 65
+
+    labelize!(ax2)
+    gridtoggle!(ax2)
+```
+![](examples/walkthrough/fig3.png)
+
+Plot phase shifted sine waves. Create a discrete colorscale using `discretize`:
+```
+phirange = range(0, pi/2, 7)
+
+n = length(t)
+
+colorscale = discretize(length(phirange), colormap = white2blue)
+
+for (color, ϕ) in zip(colorscale, phirange)
+    lines!(repeat([ϕ], n), t, sin.(t .+ ϕ),
+        color = color,
+        linewidth = 4) 
+end
+```
+![](examples/walkthrough/fig4.png)
+
+Create a third 2D axis below existing figures, and plot the summed phase shifted lines. Reset the protrusions on the 3D plot.
+```
+ax3 = Axis(fig[2, :],
+        xlabel = "t",
+        ylabel = "∑sin(t+ϕ)",
+        title = "Combined")
+
+summed = sum([sin.(t .+ ϕ) for ϕ in phirange])
+
+lines!(t, summed,
+    color = summed,
+    linewidth = 8,
+    colormap = white2blue)
+
+ax2.protrusions = 0
+```
+![](examples/walkthrough/fig5.png)
+
+Use `gridtoggle!` to turn on the grid for the latest plot:
+```
+gridtoggle!(ax3)
+```
+![](examples/walkthrough/fig6.png)
+
+Scale the text size on the first plot:
+```
+labelscale!(ax, 0.75)
+```
+![](examples/walkthrough/fig7.png)
+
+Turn off the decorations for the last plot:
+```
+labelize!(ax2)
+gridtoggle!(ax2)
+```
+Equivalent to the built-in functions:
+```
+hidedecorations!(ax2)
+hidespines!(ax2)
+```
+![](examples/walkthrough/fig8.png)
