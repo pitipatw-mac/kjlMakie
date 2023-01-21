@@ -1,6 +1,6 @@
 module kjlMakie
 
-using Makie
+using CairoMakie
 using Colors
 
 include("colors.jl")
@@ -27,6 +27,7 @@ export labelscale!
 export changefont!
 export resetlabelscale!
 export gridtoggle!
+
 end # module
  
 #test123
